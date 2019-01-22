@@ -1,0 +1,777 @@
+﻿$def with (form)
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Home page</title>
+		<!-- 收藏夹图标-->
+		<link rel="icon" type="image/png" href="static/img/favcion.png" />
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css" media="all" />
+		<!-- Slick nav CSS -->
+		<link rel="stylesheet" type="text/css" href="static/css/slicknav.min.css" media="all" />
+		<!-- Iconfont CSS -->
+		<link rel="stylesheet" type="text/css" href="static/css/icofont.css" media="all" />
+		<!-- Owl carousel CSS -->
+		<link rel="stylesheet" type="text/css" href="static/css/owl.carousel.css">
+		<!-- Popup CSS -->
+		<link rel="stylesheet" type="text/css" href="static/css/magnific-popup.css">
+		<!-- Main style CSS -->
+		<link rel="stylesheet" type="text/css" href="static/css/style.css" media="all" />
+		<!-- Responsive CSS -->
+		<link rel="stylesheet" type="text/css" href="static/css/responsive.css" media="all" />
+	</head>
+	<body>
+		<!-- Page loader -->
+	    <div id="preloader"></div>
+		<!-- header section start -->
+		<header class="header">
+			<div class="container">
+				<div class="header-area">
+					<!--loge可以不要-->
+
+					<div class="header-right">
+						<form action="/s" mathod="get">
+							<select>
+								<option value="Movies">电影大全</option>
+								<option value="Movies">爱情</option>
+								<option value="Movies">动作</option>
+								<option value="Movies">爱情动作</option>
+							</select>
+							<input type="text" name="keyword"/>
+							<button><i class="icofont icofont-search"></i></button>
+						</form>
+						<ul>
+							<li><a href="#">Welcome Guest!</a></li>
+						</ul>
+					</div>
+					<div class="menu-area">
+						<div class="responsive-menu"></div>
+					    <div class="mainmenu">
+                            <ul id="primary-menu">
+                                <li><a class="active" href="index.html">主页</a></li>
+                                <li><a href="movies.html">电影全集</a></li>
+                                <li><a href="celebrities.html">演员</a></li>
+                                <li><a href="top-movies.html">好片推荐</a></li>
+                                <li><a href="blog.html">新闻</a></li>
+								<li><a href="#">Pages <i class="icofont icofont-simple-down"></i></a>
+									<ul>
+										<li><a href="blog-details.html">博客细节</a></li>
+										<li><a href="movie-details.html">电影详情</a></li>
+									</ul>
+								</li>
+
+                            </ul>
+					    </div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- 首页推荐 -->
+		<section class="hero-area" id="home">
+			<div class="container">
+				<div class="hero-area-slider">
+					<div class="row hero-area-slide">
+						<div class="col-lg-6 col-md-5">
+							<div class="hero-area-content">
+								<img src="static/img/slide2.png" alt="about" />
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-7">
+							<div class="hero-area-content pr-50">
+								<h2>电影的名称</h2>
+								<div class="review">
+									<div class="author-review">
+										<i class="icofont icofont-star"></i>
+										<i class="icofont icofont-star"></i>
+										<i class="icofont icofont-star"></i>
+										<i class="icofont icofont-star"></i>
+
+									</div>
+									<h4>投票人数 人</h4>
+								</div>
+								<p>文字信息</p>
+								<!--参演者头像，可以不要-->
+								<h3>参演者</h3>
+								<div class="slide-cast">
+									<div class="single-slide-cast">
+										<img src="static/img/cast/cast1.png" alt="about" />
+									</div>
+									<div class="single-slide-cast">
+										<img src="static/img/cast/cast2.png" alt="about" />
+									</div>
+									<div class="single-slide-cast">
+										<img src="static/img/cast/cast3.png" alt="about" />
+									</div>
+									<div class="single-slide-cast">
+										<img src="static/img/cast/cast4.png" alt="about" />
+									</div>
+									<div class="single-slide-cast">
+										<img src="static/img/cast/cast5.png" alt="about" />
+									</div>
+									<div class="single-slide-cast">
+										<img src="static/img/cast/cast6.png" alt="about" />
+									</div>
+									<div class="single-slide-cast">
+										<img src="static/img/cast/cast7.png" alt="about" />
+									</div>
+									<div class="single-slide-cast text-center">
+										5+
+									</div>
+								</div>
+								<div class="slide-trailor">
+									<h3>观看电影</h3>
+									<a class="theme-btn theme-btn2" href="#"><i class="icofont icofont-play"></i>点我跳转</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row hero-area-slide">
+						<div class="col-lg-6 col-md-5">
+							<div class="hero-area-content">
+								<img src="static/img/slide1.png" alt="about" />
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-7">
+							<div class="hero-area-content pr-50">
+								<h2>Last Avatar</h2>
+								<div class="review">
+									<div class="author-review">
+										<i class="icofont icofont-star"></i>
+										<i class="icofont icofont-star"></i>
+										<i class="icofont icofont-star"></i>
+										<i class="icofont icofont-star"></i>
+										<i class="icofont icofont-star"></i>
+									</div>
+									<h4>180k voters</h4>
+								</div>
+								<p>She is a devil princess from the demon world. She grew up sheltered by her parents and doesn't really know how to be evil or any of the common actions,   She is unable to cry due to Keita's accidental first wish, despite needed for him to wish...</p>
+								<h3>Cast:</h3>
+								<div class="slide-cast">
+									<div class="single-slide-cast">
+										<img src="static/img/cast/cast1.png" alt="about" />
+									</div>
+									<div class="single-slide-cast">
+										<img src="static/img/cast/cast2.png" alt="about" />
+									</div>
+									<div class="single-slide-cast">
+										<img src="static/img/cast/cast3.png" alt="about" />
+									</div>
+									<div class="single-slide-cast">
+										<img src="static/img/cast/cast4.png" alt="about" />
+									</div>
+									<div class="single-slide-cast">
+										<img src="static/img/cast/cast5.png" alt="about" />
+									</div>
+									<div class="single-slide-cast">
+										<img src="static/img/cast/cast6.png" alt="about" />
+									</div>
+									<div class="single-slide-cast">
+										<img src="static/img/cast/cast7.png" alt="about" />
+									</div>
+									<div class="single-slide-cast text-center">
+										5+
+									</div>
+								</div>
+								<div class="slide-trailor">
+									<h3>Watch Trailer</h3>
+									<a class="theme-btn theme-btn2" href="#"><i class="icofont icofont-play"></i> Tickets</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row hero-area-slide">
+						<div class="col-lg-6 col-md-5">
+							<div class="hero-area-content">
+								<img src="static/img/slide3.png" alt="about" />
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-7">
+							<div class="hero-area-content pr-50">
+								<h2>The Deer God</h2>
+								<div class="review">
+									<div class="author-review">
+										<i class="icofont icofont-star"></i>
+										<i class="icofont icofont-star"></i>
+										<i class="icofont icofont-star"></i>
+										<i class="icofont icofont-star"></i>
+										<i class="icofont icofont-star"></i>
+									</div>
+									<h4>180k voters</h4>
+								</div>
+								<p>She is a devil princess from the demon world. She grew up sheltered by her parents and doesn't really know how to be evil or any of the common actions,   She is unable to cry due to Keita's accidental first wish, despite needed for him to wish...</p>
+								<h3>Cast:</h3>
+								<div class="slide-cast">
+									<div class="single-slide-cast">
+										<img src="static/img/cast/cast1.png" alt="about" />
+									</div>
+									<div class="single-slide-cast">
+										<img src="static/img/cast/cast2.png" alt="about" />
+									</div>
+									<div class="single-slide-cast">
+										<img src="static/img/cast/cast3.png" alt="about" />
+									</div>
+									<div class="single-slide-cast">
+										<img src="static/img/cast/cast4.png" alt="about" />
+									</div>
+									<div class="single-slide-cast">
+										<img src="static/img/cast/cast5.png" alt="about" />
+									</div>
+									<div class="single-slide-cast">
+										<img src="static/img/cast/cast6.png" alt="about" />
+									</div>
+									<div class="single-slide-cast">
+										<img src="static/img/cast/cast7.png" alt="about" />
+									</div>
+									<div class="single-slide-cast text-center">
+										5+
+									</div>
+								</div>
+								<div class="slide-trailor">
+									<h3>Watch Trailer</h3>
+									<a class="theme-btn theme-btn2" href="#"><i class="icofont icofont-play"></i> Tickets</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="hero-area-thumb">
+					<div class="thumb-prev">
+						<div class="row hero-area-slide">
+							<div class="col-lg-6">
+								<div class="hero-area-content">
+									<img src="static/img/slide3.png" alt="about" />
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="hero-area-content pr-50">
+									<h2>Last Avatar</h2>
+									<div class="review">
+										<div class="author-review">
+											<i class="icofont icofont-star"></i>
+											<i class="icofont icofont-star"></i>
+											<i class="icofont icofont-star"></i>
+											<i class="icofont icofont-star"></i>
+											<i class="icofont icofont-star"></i>
+										</div>
+										<h4>180k voters</h4>
+									</div>
+									<p>She is a devil princess from the demon world. She grew up sheltered by her parents and doesn't really know how to be evil or any of the common actions,   She is unable to cry due to Keita's accidental first wish, despite needed for him to wish...</p>
+									<h3>Cast:</h3>
+									<div class="slide-cast">
+										<div class="single-slide-cast">
+											<img src="static/img/cast/cast1.png" alt="about" />
+										</div>
+										<div class="single-slide-cast">
+											<img src="static/img/cast/cast2.png" alt="about" />
+										</div>
+										<div class="single-slide-cast">
+											<img src="static/img/cast/cast3.png" alt="about" />
+										</div>
+										<div class="single-slide-cast">
+											<img src="static/img/cast/cast4.png" alt="about" />
+										</div>
+										<div class="single-slide-cast">
+											<img src="static/img/cast/cast5.png" alt="about" />
+										</div>
+										<div class="single-slide-cast">
+											<img src="static/img/cast/cast6.png" alt="about" />
+										</div>
+										<div class="single-slide-cast">
+											<img src="static/img/cast/cast7.png" alt="about" />
+										</div>
+										<div class="single-slide-cast text-center">
+											5+
+										</div>
+									</div>
+									<div class="slide-trailor">
+										<h3>Watch Trailer</h3>
+										<a class="theme-btn theme-btn2" href="#"><i class="icofont icofont-play"></i> Tickets</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="thumb-next">
+						<div class="row hero-area-slide">
+							<div class="col-lg-6">
+								<div class="hero-area-content">
+									<img src="static/img/slide1.png" alt="about" />
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="hero-area-content pr-50">
+									<h2>The Deer God</h2>
+									<div class="review">
+										<div class="author-review">
+											<i class="icofont icofont-star"></i>
+											<i class="icofont icofont-star"></i>
+											<i class="icofont icofont-star"></i>
+											<i class="icofont icofont-star"></i>
+											<i class="icofont icofont-star"></i>
+										</div>
+										<h4>180k voters</h4>
+									</div>
+									<p>She is a devil princess from the demon world. She grew up sheltered by her parents and doesn't really know how to be evil or any of the common actions,   She is unable to cry due to Keita's accidental first wish, despite needed for him to wish...</p>
+									<h3>Cast:</h3>
+									<div class="slide-cast">
+										<div class="single-slide-cast">
+											<img src="static/img/cast/cast1.png" alt="about" />
+										</div>
+										<div class="single-slide-cast">
+											<img src="static/img/cast/cast2.png" alt="about" />
+										</div>
+										<div class="single-slide-cast">
+											<img src="static/img/cast/cast3.png" alt="about" />
+										</div>
+										<div class="single-slide-cast">
+											<img src="static/img/cast/cast4.png" alt="about" />
+										</div>
+										<div class="single-slide-cast">
+											<img src="static/img/cast/cast5.png" alt="about" />
+										</div>
+										<div class="single-slide-cast">
+											<img src="static/img/cast/cast6.png" alt="about" />
+										</div>
+										<div class="single-slide-cast">
+											<img src="static/img/cast/cast7.png" alt="about" />
+										</div>
+										<div class="single-slide-cast text-center">
+											5+
+										</div>
+									</div>
+									<div class="slide-trailor">
+										<h3>Watch Trailer</h3>
+										<a class="theme-btn theme-btn2" href="#"><i class="icofont icofont-play"></i> Tickets</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section><!-- hero area end -->
+		<!-- 热播推荐-->
+		<section class="portfolio-area pt-60">
+			<div class="container">
+				<div class="row flexbox-center">
+					<div class="col-lg-6 text-center text-lg-left">
+					    <div class="section-title">
+							<h1><i class="icofont icofont-movie"></i> 热播推荐</h1>
+						</div>
+					</div>
+					<div class="col-lg-6 text-center text-lg-right">
+					    <div class="portfolio-menu">
+							<ul>
+								<li data-filter="*" class="active">近期热播</li>
+								<li data-filter=".soon">高分推荐</li>
+								<li data-filter=".top">近期上映</li>
+								<li data-filter=".released">重温经典</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<hr />
+				<div class="row portfolio-item">
+					<div class="col-lg-3 col-md-4 col-sm-6 soon released">
+						<div class="single-portfolio">
+							<div class="single-portfolio-img">
+								<img src="static/img/portfolio/portfolio1.png" alt="portfolio" />
+								<a href="https://www.youtube.com/watch?v=RZXnugbhw_4" class="popup-youtube">
+									<i class="icofont icofont-ui-play"></i>
+								</a>
+							</div>
+							<div class="portfolio-content">
+								<h2>Boyz II Men</h2>
+								<div class="review">
+									<div class="author-review">
+										<i class="icofont icofont-star"></i>
+										<i class="icofont icofont-star"></i>
+										<i class="icofont icofont-star"></i>
+										<i class="icofont icofont-star"></i>
+										<i class="icofont icofont-star"></i>
+									</div>
+									<h4>180k voters</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-6 top">
+						<div class="single-portfolio">
+							<div class="single-portfolio-img">
+								<img src="static/img/portfolio/portfolio2.png" alt="portfolio" />
+								<a href="https://www.youtube.com/watch?v=RZXnugbhw_4" class="popup-youtube">
+									<i class="icofont icofont-ui-play"></i>
+								</a>
+							</div>
+							<div class="portfolio-content">
+								<h2>Tale of Revemge</h2>
+								<div class="review">
+									<div class="author-review">
+										<i class="icofont icofont-star"></i>
+										<i class="icofont icofont-star"></i>
+										<i class="icofont icofont-star"></i>
+										<i class="icofont icofont-star"></i>
+										<i class="icofont icofont-star"></i>
+									</div>
+									<h4>180k voters</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-6 soon">
+						<div class="single-portfolio">
+							<div class="single-portfolio-img">
+								<img src="static/img/portfolio/portfolio3.png" alt="portfolio" />
+								<a href="https://www.youtube.com/watch?v=RZXnugbhw_4" class="popup-youtube">
+									<i class="icofont icofont-ui-play"></i>
+								</a>
+							</div>
+							<div class="portfolio-content">
+								<h2>The Lost City of Z</h2>
+								<div class="review">
+									<div class="author-review">
+										<i class="icofont icofont-star"></i>
+										<i class="icofont icofont-star"></i>
+										<i class="icofont icofont-star"></i>
+										<i class="icofont icofont-star"></i>
+										<i class="icofont icofont-star"></i>
+									</div>
+									<h4>180k voters</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-6 top released">
+						<div class="single-portfolio">
+							<div class="single-portfolio-img">
+								<img src="static/img/portfolio/portfolio4.png" alt="portfolio" />
+								<a href="https://www.youtube.com/watch?v=RZXnugbhw_4" class="popup-youtube">
+									<i class="icofont icofont-ui-play"></i>
+								</a>
+							</div>
+							<div class="portfolio-content">
+								<h2>Beast Beauty</h2>
+								<div class="review">
+									<div class="author-review">
+										<i class="icofont icofont-star"></i>
+										<i class="icofont icofont-star"></i>
+										<i class="icofont icofont-star"></i>
+										<i class="icofont icofont-star"></i>
+										<i class="icofont icofont-star"></i>
+									</div>
+									<h4>180k voters</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-6 released">
+						<div class="single-portfolio">
+							<div class="single-portfolio-img">
+								<img src="static/img/portfolio/portfolio5.png" alt="portfolio" />
+								<a href="https://www.youtube.com/watch?v=RZXnugbhw_4" class="popup-youtube">
+									<i class="icofont icofont-ui-play"></i>
+								</a>
+							</div>
+							<div class="portfolio-content">
+								<h2>In The Fade</h2>
+								<div class="review">
+									<div class="author-review">
+										<i class="icofont icofont-star"></i>
+										<i class="icofont icofont-star"></i>
+										<i class="icofont icofont-star"></i>
+										<i class="icofont icofont-star"></i>
+										<i class="icofont icofont-star"></i>
+									</div>
+									<h4>180k voters</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-6 soon top">
+						<div class="single-portfolio">
+							<div class="single-portfolio-img">
+								<img src="static/img/portfolio/portfolio6.png" alt="portfolio" />
+								<a href="https://www.youtube.com/watch?v=RZXnugbhw_4" class="popup-youtube">
+									<i class="icofont icofont-ui-play"></i>
+								</a>
+							</div>
+							<div class="portfolio-content">
+								<h2>Last Hero</h2>
+								<div class="review">
+									<div class="author-review">
+										<i class="icofont icofont-star"></i>
+										<i class="icofont icofont-star"></i>
+										<i class="icofont icofont-star"></i>
+										<i class="icofont icofont-star"></i>
+										<i class="icofont icofont-star"></i>
+									</div>
+									<h4>180k voters</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-6 soon">
+						<div class="single-portfolio">
+							<div class="single-portfolio-img">
+								<img src="static/img/portfolio/portfolio3.png" alt="portfolio" />
+								<a href="https://www.youtube.com/watch?v=RZXnugbhw_4" class="popup-youtube">
+									<i class="icofont icofont-ui-play"></i>
+								</a>
+							</div>
+							<div class="portfolio-content">
+								<h2>The Lost City of Z</h2>
+								<div class="review">
+									<div class="author-review">
+										<i class="icofont icofont-star"></i>
+										<i class="icofont icofont-star"></i>
+										<i class="icofont icofont-star"></i>
+										<i class="icofont icofont-star"></i>
+										<i class="icofont icofont-star"></i>
+									</div>
+									<h4>180k voters</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-6 top released">
+						<div class="single-portfolio">
+							<div class="single-portfolio-img">
+								<img src="static/img/portfolio/portfolio4.png" alt="portfolio" />
+								<a href="https://www.youtube.com/watch?v=RZXnugbhw_4" class="popup-youtube">
+									<i class="icofont icofont-ui-play"></i>
+								</a>
+							</div>
+							<div class="portfolio-content">
+								<h2>Beast Beauty</h2>
+								<div class="review">
+									<div class="author-review">
+										<i class="icofont icofont-star"></i>
+										<i class="icofont icofont-star"></i>
+										<i class="icofont icofont-star"></i>
+										<i class="icofont icofont-star"></i>
+										<i class="icofont icofont-star"></i>
+									</div>
+									<h4>180k voters</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- 精选好片-->
+		<section class="video ptb-90">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+					    <div class="section-title pb-20">
+							<h1><i class="icofont icofont-film"></i>精选好片</h1>
+						</div>
+					</div>
+				</div>
+				<hr />
+				<div class="row">
+                    <div class="col-md-9">
+						<div class="video-area">
+							<a href="movie-details.html"><img src="static/img/video/video1.png" alt="video"/>
+							</a>
+							<div class="video-text">
+								<h2>电影名称</h2>
+								<div class="review">
+									<div class="author-review">
+										<i class="icofont icofont-star"></i>
+										<i class="icofont icofont-star"></i>
+										<i class="icofont icofont-star"></i>
+										<i class="icofont icofont-star"></i>
+										<i class="icofont icofont-star"></i>
+									</div>
+									<h4>观看人次</h4>
+								</div>
+							</div>
+						</div>
+                    </div>
+                    <div class="col-md-3">
+						<div class="row">
+							<div class="col-md-12 col-sm-6">
+								<div class="video-area">
+									<img src="static/img/video/video2.png" alt="video" />
+									<a href="//www.baidu.com" class="popup-youtube">
+										<!--播放按钮-->
+										<i class="icofont icofont-ui-play"></i>
+									</a>
+								</div>
+							</div>
+							<div class="col-md-12 col-sm-6">
+								<div class="video-area">
+									<img src="static/img/video/video3.png" alt="video" />
+									<a href="#" class="popup-youtube">
+										<i class="icofont icofont-ui-play"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+                    </div>
+				</div>
+			</div>
+		</section><!-- video section end -->
+		<!-- 近期上映 -->
+		<section class="news">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+					    <div class="section-title pb-20">
+							<h1><i class="icofont icofont-coffee-cup"></i>上期精选</h1>
+						</div>
+					</div>
+				</div>
+				<hr />
+			</div>
+			<div class="news-slide-area">
+				<div class="news-slider">
+					<div class="single-news">
+						<div class="news-bg-1"></div>
+						<div class="news-date">
+							<h2><span>12月</span>27</h2>
+							<h1>2018</h1>
+						</div>
+						<div class="news-content">
+							<h2>电影名称</h2>
+							<p>电影详情</p>
+						</div>
+						<a href="#">更多信息</a>
+					</div>
+					<div class="single-news">
+						<div class="news-bg-2"></div>
+						<div class="news-date">
+							<h2><span>NOV</span> 25</h2>
+							<h1>2017</h1>
+						</div>
+						<div class="news-content">
+							<h2>The Witch Queen</h2>
+							<p>Witch Queen is a tall woman with a slim build. She has pink hair, which is pulled up under her hat, and teal eyes.</p>
+						</div>
+						<a href="#">Read More</a>
+					</div>
+					<div class="single-news">
+						<div class="news-bg-3"></div>
+						<div class="news-date">
+							<h2><span>NOV</span> 25</h2>
+							<h1>2017</h1>
+						</div>
+						<div class="news-content">
+							<h2>The Witch Queen</h2>
+							<p>Witch Queen is a tall woman with a slim build. She has pink hair, which is pulled up under her hat, and teal eyes.</p>
+						</div>
+						<a href="#">Read More</a>
+					</div>
+				</div>
+				<div class="news-thumb">
+					<div class="news-next">
+						<div class="single-news">
+							<div class="news-bg-3"></div>
+							<div class="news-date">
+								<h2><span>NOV</span> 25</h2>
+								<h1>2017</h1>
+							</div>
+							<div class="news-content">
+								<h2>The Witch Queen</h2>
+								<p>Witch Queen is a tall woman with a slim build. She has pink hair, which is pulled up under her hat, and teal eyes.</p>
+							</div>
+							<a href="#">Read More</a>
+						</div>
+					</div>
+					<div class="news-prev">
+						<div class="single-news">
+							<div class="news-bg-2"></div>
+							<div class="news-date">
+								<h2><span>NOV</span> 25</h2>
+								<h1>2017</h1>
+							</div>
+							<div class="news-content">
+								<h2>The Witch Queen</h2>
+								<p>Witch Queen is a tall woman with a slim build. She has pink hair, which is pulled up under her hat, and teal eyes.</p>
+							</div>
+							<a href="#">Read More</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section><!-- news section end -->
+		<!-- footer section start -->
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+                    <div class="col-lg-3 col-sm-6">
+						<div class="widget">
+
+							<p>上海交通大学六学研究会</p>
+							<h6><span>联系我们QQ:</span>514684665</h6>
+						</div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+						<div class="widget">
+							<h4>团队成员</h4>
+							<ul>
+								<li><a href="#">秃头前端:CJJ</a></li>
+								<li><a href="#">傻逼前端:潘梓丞</a></li>
+								<li><a href="#">隐藏大佬:赵屹东</a></li>
+								<li><a href="#">carry大佬:刘宏庆</a></li>
+							</ul>
+						</div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+						<div class="widget">
+							<h4>声明</h4>
+							<ul>
+								<li><a href="#">庞大的制作团队(4人)</a></li>
+								<li><a href="#">只分享精品内容（偷的豆瓣）</a></li>
+								<li><a href="#">全方位的技术支持（全靠菜鸟教程）</a></li>
+								<li><a href="#">因为专注所以专业（专业修仙秃头）</a></li>
+							</ul>
+						</div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+						<div class="widget">
+							<h4>我们的微信(扫一扫有惊喜)</h4>
+							<img style="width:200px;height:200px;" src="static/img/shouqian.jpg"/>
+						</div>
+                    </div>
+				</div>
+				<hr />
+			</div>
+			<div class="copyright">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6 text-center text-lg-left">
+							<div class="copyright-content">
+								<p>&copy; 2018 Movie. All Rights <a href="#">Reserved</a>. Designed by Shanghai jiaotong university six studies research association</p>
+							</div>
+						</div>
+						<div class="col-lg-6 text-center text-lg-right">
+							<div class="copyright-content">
+								<a href="#" class="scrollToTop">
+									回到顶部<i class="icofont icofont-arrow-up"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer><!-- footer section end -->
+		<!-- jquery main JS -->
+		<script src="static/js/jquery.min.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="static/js/bootstrap.min.js"></script>
+		<!-- Slick nav JS -->
+		<script src="static/js/jquery.slicknav.min.js"></script>
+		<!-- owl carousel JS -->
+		<script src="static/js/owl.carousel.min.js"></script>
+		<!-- Popup JS -->
+		<script src="static/js/jquery.magnific-popup.min.js"></script>
+		<!-- Isotope JS -->
+		<script src="static/js/isotope.pkgd.min.js"></script>
+		<!-- main JS -->
+		<script src="static/js/main.js"></script>
+	</body>
+</html>

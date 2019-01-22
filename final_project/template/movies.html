@@ -1,0 +1,224 @@
+﻿$def with(form,lis)
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>电影大全</title>
+		<!-- Favicon Icon -->
+		<link rel="icon" type="image/png" href="/static/img/favcion.png" />
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css" media="all" />
+		<!-- Slick nav CSS -->
+		<link rel="stylesheet" type="text/css" href="/static/css/slicknav.min.css" media="all" />
+		<!-- Iconfont CSS -->
+		<link rel="stylesheet" type="text/css" href="/static/css/icofont.css" media="all" />
+		<!-- Owl carousel CSS -->
+		<link rel="stylesheet" type="text/css" href="/static/css/owl.carousel.css">
+		<!-- Popup CSS -->
+		<link rel="stylesheet" type="text/css" href="/static/css/magnific-popup.css">
+		<!-- Main style CSS -->
+		<link rel="stylesheet" type="text/css" href="/static/css/style.css" media="all" />
+		<!-- Responsive CSS -->
+		<link rel="stylesheet" type="text/css" href="/static/css/responsive.css" media="all" />
+		<!--[if lt IE 9]>
+		  <script src="http://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		  <script src="http://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+	<!-- Page loader -->
+	    <div id="preloader"></div>
+		<!-- header section start -->
+		<header class="header">
+			<div class="container">
+				<div class="header-area">
+
+					<div class="header-right">
+
+							<form action="\s" mathod="get">
+							<select>
+								<option value="Movies">电影</option>
+								<option value="Movies">爱情</option>
+								<option value="Movies">动作</option>
+								<option value="Movies">爱情动作</option>
+							</select>
+							<input type="text" name="keyword"/>
+							<button><i class="icofont icofont-search"></i></button>
+						</form>
+                        <ul>
+							<li><a href="#">Welcome Guest!</a></li>
+							<li><a class="login-popup" href="#">登陆</a></li>
+						</ul>
+					</div>
+					<div class="menu-area">
+						<div class="responsive-menu"></div>
+					    <div class="mainmenu">
+                            <ul id="primary-menu">
+                                <li><a href="\">主页</a></li>
+                                <li><a class="active" href="movies.html">电影全集</a></li>
+                                <li><a href="celebrities.html">演员</a></li>
+                                <li><a href="top-movies.html">好片推荐</a></li>
+                                <li><a href="blog.html">新闻</a></li>
+								<li><a href="#">Pages <i class="icofont icofont-simple-down"></i></a>
+									<ul>
+										<li><a href="blog-details.html">博客细节</a></li>
+										<li><a href="movie-details.html">电影详情</a></li>
+									</ul>
+								</li>
+                                <li><a class="theme-btn" href="#"><i class="icofont icofont-ticket"></i> Tickets</a></li>
+                            </ul>
+					    </div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<section class="breadcrumb-area">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="breadcrumb-area-content">
+							<h1>电影大全</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section><!-- breadcrumb area end -->
+
+		<!-- 热播推荐-->
+		<section class="portfolio-area pt-60">
+			<div class="container">
+				<div class="row flexbox-center">
+					<div class="col-lg-6 text-center text-lg-left">
+					    <div class="section-title">
+							<h1><i class="icofont icofont-movie"></i> 搜索结果</h1>
+						</div>
+					</div>
+					<div class="col-lg-6 text-center text-lg-right">
+					    <div class="portfolio-menu">
+						</div>
+					</div>
+				</div>
+				<hr />
+				<div class="row portfolio-item">
+					$for i in range(len(lis)):
+					    <div class="col-lg-3 col-md-4 col-sm-6 soon released">
+						    <div class="single-portfolio">
+							    <div class="single-portfolio-img">
+								       <a href="/m?name=$lis[i][0]" >
+									       <img src=$lis[i][1] alt="portfolio" />
+								       </a>
+							    </div>
+							    <div class="portfolio-content">
+									<h2>$lis[i][0]</h2>
+									<div class="review">
+										<div class="author-review">
+											$if float(lis[i][2])<2:
+											    <i class="icofont icofont-star"></i>
+											$elif 2<=float(lis[i][2])<4:
+											    <i class="icofont icofont-star"></i>
+											    <i class="icofont icofont-star"></i>
+											$elif 4<=float(lis[i][2])<6:
+											    <i class="icofont icofont-star"></i>
+											    <i class="icofont icofont-star"></i>
+											    <i class="icofont icofont-star"></i>
+											$elif 6<=float(lis[i][2])<8:
+											    <i class="icofont icofont-star"></i>
+											    <i class="icofont icofont-star"></i>
+											    <i class="icofont icofont-star"></i>
+											    <i class="icofont icofont-star"></i>
+											$else:
+											    <i class="icofont icofont-star"></i>
+											    <i class="icofont icofont-star"></i>
+											    <i class="icofont icofont-star"></i>
+											    <i class="icofont icofont-star"></i>
+											    <i class="icofont icofont-star"></i>
+										</div>
+										<h4>$lis[i][2]</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+				</div>
+			</div>
+		</section>
+		<!-- 页脚-->
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+                    <div class="col-lg-3 col-sm-6">
+						<div class="widget">
+
+							<p>上海交通大学六学研究会</p>
+							<h6><span>联系我们QQ:</span>514684665</h6>
+						</div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+						<div class="widget">
+							<h4>团队成员</h4>
+							<ul>
+								<li><a href="#">秃头前端:CJJ</a></li>
+								<li><a href="#">傻逼前端:潘梓丞</a></li>
+								<li><a href="#">隐藏大佬:赵屹东</a></li>
+								<li><a href="#">carry大佬:刘宏庆</a></li>
+							</ul>
+						</div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+						<div class="widget">
+							<h4>声明</h4>
+							<ul>
+								<li><a href="#">庞大的制作团队(4人)</a></li>
+								<li><a href="#">只分享精品内容（偷的豆瓣）</a></li>
+								<li><a href="#">全方位的技术支持（全靠菜鸟教程）</a></li>
+								<li><a href="#">因为专注所以专业（专业修仙秃头）</a></li>
+							</ul>
+						</div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+						<div class="widget">
+							<h4>我们的微信(扫一扫有惊喜)</h4>
+							<img style="wifdth:200px;height:200px;" src="/static/img/shouqian.jpg"/>
+						</div>
+                    </div>
+				</div>
+				<hr />
+			</div>
+			<div class="copyright">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6 text-center text-lg-left">
+							<div class="copyright-content">
+								<p>&copy; 2018 Movie. All Rights <a href="#">Reserved</a>. Designed by Shanghai jiaotong university six studies research association</p>
+							</div>
+						</div>
+						<div class="col-lg-6 text-center text-lg-right">
+							<div class="copyright-content">
+								<a href="#" class="scrollToTop">
+									回到顶部<i class="icofont icofont-arrow-up"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer><!-- footer section end -->
+		<!-- jquery main JS -->
+		<script src="/static/js/jquery.min.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="/static/js/bootstrap.min.js"></script>
+		<!-- Slick nav JS -->
+		<script src="/static/js/jquery.slicknav.min.js"></script>
+		<!-- owl carousel JS -->
+		<script src="/static/js/owl.carousel.min.js"></script>
+		<!-- Popup JS -->
+		<script src="/static/js/jquery.magnific-popup.min.js"></script>
+		<!-- Isotope JS -->
+		<script src="/static/js/isotope.pkgd.min.js"></script>
+		<!-- main JS -->
+		<script src="/static/js/main.js"></script>
+	</body>
+</html>
